@@ -7,38 +7,37 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
 
     <title>Frontend Mentor | Social links profile</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body>
+    <main class="card">
+      <header class="info">
+        <img class="avatar" src="./assets/images/avatar-mantis.jpeg" alt="Avatar - head of a praying mantis">
+        <div class="name-container">
+          <h1 class="name">András Morauszki</h1>
+          <p class="residence">Szentendre, Hungary</p>
+        </div>
+        <p class="bio">"Front-end developer and trail runner."</p>
+      </header>
 
-    Jessica Randall
-    London, United Kingdom
-    "Front-end developer and avid reader."
+      <ul class="social-links">
+        <li class="social-link"><a href="https://github.com/morauszkia">GitHub</a></li>
+        <li class="social-link"><a href="https://www.frontendmentor.io/profile/morauszkia">Frontend Mentor</a></li>
+        <li class="social-link"><a href="https://www.linkedin.com/in/andras-morauszki/">LinkedIn</a></li>
+        <li class="social-link"><a href="https://x.com/mantis_hu86">Twitter/X</a></li>
+        <li class="social-link"><a href="https://exercism.org/profiles/morauszkia">Exercism</a></li>
+        <li class="social-link"><a href="https://www.codewars.com/users/morauszkia">CodeWars</a></li>
+        <li class="social-link"><a href="https://www.freecodecamp.org/morauszkia">freeCodeCamp</a></li>
+      </ul>
+    </main>
 
-    GitHub
-    Frontend Mentor
-    LinkedIn
-    Twitter
-    Instagram
-
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/morauszkia">mantis</a>.
-    </div>
+    </footer>
   </body>
 
 </html>
