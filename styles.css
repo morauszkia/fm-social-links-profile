@@ -1,8 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-dark-grey: hsl(0, 0%, 12%);
+  --color-black: hsl(0, 0%, 8%);
+  --text-normal: 1.4rem;
+  --text-lg: 2.4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: var(--color-black);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-dark-grey);
+  width: 38.4rem;
+  max-width: 87vw;
+  padding: clamp(2.4rem, 6vw, 4rem);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.avatar {
+  width: 8.8rem;
+  height: 8.8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.name {
+  font-size: var(--text-lg);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.residence {
+  color: var(--color-primary);
+  font-size: var(--text-normal);
+}
+
+.bio {
+  color: var(--color-white);
+  font-size: var(--text-normal);
+  font-weight: 400;
+}
+
+.social-links {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.logo {
+  height: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.social-link-a:link,
+.social-link-a:visited {
+  text-decoration: none;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: var(--text-normal);
+  padding: 1.2rem;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.2s ease;
+}
+
+.social-link-a:focus,
+.social-link-a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-dark-grey);
+}
+
+.social-link-a:focus .logo,
+.social-link-a:hover .logo {
+  filter: invert();
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-}
 
+  position: fixed;
+  bottom: 0;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
